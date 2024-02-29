@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Carfap</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    </head>
+    <body>
+        <!-- The start of Sign up -->
+        <div class="signUp">
+            <div class="header">
+                <div class="headerLogo">
+                    <img src="static/images/CAR-01.png" alt="Logo">
+                </div>
+                <div class="links">
+                    <a class="l1" href="{{ url_for('register') }}">Sign Up</a>
+                    <a class="l1" href="{{ url_for('login') }}">Sign In</a>
+                    <a class="l1" href="{{ url_for('profile') }}">Profile</a>
+                    <a class="l1" href="{{ url_for('home') }}">Home</a>
+                </div>
+            </div>
+            <div class="content">
+                <!-- <p>Welcome To Our Website, Sign up below</p> -->
+                <form action="">
+                    <h2>Welcome</h2>
+                    <img class="special_case" src="static/images/CAR-01.png" alt="Logo">
+                    <div class="contentLogo">
+                        <!-- need to be filled with a logo -->
+                    </div>
+                    <input class="contentEmail" type="email" name="Email" placeholder="Enter Your email" required>
+                    <input class="contentPassword" type="password" name="Password" placeholder="Enter Your Password" required>
+                    <input class="contentSubmit" type="Submit" name="Submit">
+                </form>
+            </div>
+            <div class="footer">
+                <a href=""><i class="fa-brands fa-square-facebook"></i><span> For more details you can follow us in Facebook</span></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i><span> For more details you can follow us in Linked-In</span></a>           
+                <a href=""><i class="fa-brands fa-square-twitter"></i><span> For more details you can follow us in Twitter</span></a>
+                <a href=""><i class="fa-brands fa-square-github"></i><span> For more details you can follow us in Github</span></a>
+            </div>
+        </div>
+    </body>
+</html>

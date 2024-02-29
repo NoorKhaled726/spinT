@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>
+            Carfap
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
+        <!-- stylesheet/stylesheet.css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+    </head>
+    <body>
+        <!-- The start of Sign up -->
+        <div class="signIn">
+            <div class="header">
+                <div class="headerLogo">
+                    <img src="static/images/CAR-01.png" alt="Logo">
+                </div>
+                <div class="links">
+                    <a class="l1" href="{{ url_for('register') }}">Sign Up</a>
+                    <a class="l1" href="{{ url_for('login') }}">Sign In</a>
+                    <a class="l1" href="{{ url_for('profile') }}">Profile</a>
+                    <a class="l1" href="{{ url_for('home') }}">Home</a>
+                </div>
+            </div>
+            <div class="contentSignIn">
+                <!-- <p>Welcome To Our Website, Sign up below</p> -->
+                <div class="contentDescription">
+                    <div class="description">
+                        <p class="textDescription1">SPIN...arriving with Speed, Protection, just IN time :)</p>
+                        <p class="textDescription2">We provide the best drivers with the best modern cars to keep you cool and just arrive in time safely</p>
+                    </div>
+                    <div class="imageDescription"><img src="static/images/istockphoto-1470035625-1024x1024.jpg" alt=""></div>
+                </div>
+                <form class="signInForm" action="">
+                    <h2>Sign up</h2>
+                    <div class="contentLogo">
+                        <!-- need to be filled with a logo -->
+                    </div>
+                    <input type="text" class="contentFirstName" type="text" name="First_Name" placeholder="Enter Your first name" required>
+                    <input type="text" class="contentLastName" type="text" name="Last_Name" placeholder="Enter Your last name" required>
+                    <input type="text" class="contentNumber" type="number" name="Number" placeholder="Enter Your number" required>
+                    <input class="contentEmail" type="email" name="Email" placeholder="Enter Your email" required>
+                    <input class="contentPassword" type="password" name="Password" placeholder="Enter Your Password" required>
+                    <div class="buttonsContainer">
+                        <input class="contentSubmit" type="Submit" name="Submit">
+                        <input class="contentReset" type="reset" name="Reset">
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <a href=""><i class="fa-brands fa-square-facebook"></i><span> For more details you can follow us in Facebook</span></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i><span> For more details you can follow us in Linked-In</span></a>           
+                <a href=""><i class="fa-brands fa-square-twitter"></i><span> For more details you can follow us in Twitter</span></a>
+                <a href=""><i class="fa-brands fa-square-github"></i><span> For more details you can follow us in Github</span></a>
+            </div>
+        </div>
+    </body>
+</html>
